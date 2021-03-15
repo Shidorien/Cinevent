@@ -16,7 +16,7 @@
     <head>
         <meta charset="utf-8">
         <title>CinéVent - Ajouter un film</title>
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -33,8 +33,8 @@
 
             <p>Titre : </p><input type="text" class="Txt_Moyen" name="Titre">
             <p>Résume : </p><input type="text" class="Txt_paragraphe" name="Resume">
-            <p>Genre : </p> <!-- généré une list de tout les different genre en check bouton--> <input href="#" type="button" value="+" id="Aj_Genre" class="Bouton_Ajouter" onclick="">
-            <p>Nationalite : </p> <!-- généré une list de tout les differente nationalite en check bouton--> <input type="button" value="+" id="Aj_Natio" class="Bouton_Ajouter" onclick="">
+            <p>Genre : </p> <!-- généré une list de tout les different genre en check bouton--> <input href="#" type="button" value="+" id="Aj_Genre" class="Bouton_Menu" onclick="">
+            <p>Nationalite : </p> <!-- généré une list de tout les differente nationalite en check bouton--> <input type="button" value="+" id="Aj_Natio" class="Bouton_Menu" onclick="">
 
             <p>Equipe de tournage :</p>
             <!-- généré une list de tout les different role avec leur liste de personnel-->
