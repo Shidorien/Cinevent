@@ -42,12 +42,12 @@
                     <br><h3>Concepteur du site :</h3>
                     <ul>
                         <li>Gaëtan GERARD</li>
+                        <li>Camille RADE</li>
                     </ul>
                     <br><h3>Avec la participation de :</h3>
                     <ul>
                         <li>Joël FALTRAUER</li>
-                        <li>Théo MANCUSO</li>
-                        <li>Camille RADE</li>
+                        
                     </ul>
 
 
