@@ -3,7 +3,7 @@
 body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(black, #220202);margin: 0;padding: 0;background-attachment: fixed;} /*modification général sur toutes les pages du site*/
 .container {margin: auto;padding-top: 70px;}
 .box {width: 75%;margin: auto;padding: 10px;background-color: white;border-radius: 20px;} /*Ajoute un fond blanc avec les bord arrondie */
-.button {padding: 7px 17px;border-radius: 3px;color:white;background: rgba(229,9,20,1);line-height: 14px;text-decoration: none;border: 0;}
+.boutton {padding: 7px 17px;border-radius: 3px;color:white;background: rgba(229,9,20,1);line-height: 14px;text-decoration: none;border: 0;}
 h2{margin: 0!important;}
 
 /* CSS Header */
