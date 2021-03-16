@@ -23,8 +23,10 @@ Header li:not(:first-child) {height: 46px;line-height: 46px;white-space: nowrap;
 */
 
 /* CSS Header*/
-
-
+.Tab_Head {width: 100%;background-color:#393939;z-index: 4;}
+.Tab_Head .Logo {border-radius: 0 0 20px;z-index: 3;}
+.Tab_Head .BarreRouge {border-radius: 20px 0 0;z-index: 3;}
+.Tab_Head .BarreVide {background-color: black;z-index: 3;}
 
 
 /*Page accueil*/

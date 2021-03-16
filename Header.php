@@ -32,21 +32,21 @@
 
 <header>
 <?php session_start ();?>
-<table class="tab_head">
+<table class="Tab_Head">
 
 <tr>
-<th style="background-color: red;" rowspan="4">LOGO</th>
-<th style="background-color: grey;" rowspan="2">BOUTON</th>
+<th style="background-color: red;" rowspan="4" class="Logo">LOGO</th>
+<th style="background-color: grey;" rowspan="2" class="Bouton">BOUTON</th>
 </tr>
 
 <tr></tr>
 
 <tr>
-<th style="background-color: red;">Barre rouge</th>
+<th style="background-color: red;" class="BarreRouge">Barre rouge</th>
 </tr>
 
 <tr>
-<th> Barre VIDE</th>
+<th class="BarreVide"> Barre VIDE</th>
 </tr>
 </table>
 
