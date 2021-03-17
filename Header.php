@@ -32,22 +32,24 @@
 
 <header>
 <?php session_start ();?>
-<table class="Tab_Head">
+<div class="Head">
+    
+    <div class="Logo"><a href="PageAccueil.php"><img src="/GerardRadeCinevent/images/logo.png"></a></div>
+    <div class="HorsLogo">
+        <div class="Bouton">
+        <ul>
+            <li class="Boutton_Menu"><a href="PageContact.php">Contact</a></li>
+            <li class="Boutton_Menu"><a href="PageAPropos.php">a propos</a></li>
+            <!--<li><img src="/GerardRadeCinevent/images/loupe.png"></li>-->
+            <li><input type="search"></li>
+        </ul>
+    </div>
 
-<tr>
-<th style="background-color: red;" rowspan="4" class="Logo">LOGO</th>
-<th style="background-color: grey;" rowspan="2" class="Bouton">BOUTON</th>
-</tr>
-
-<tr></tr>
-
-<tr>
-<th style="background-color: red;" class="BarreRouge">Barre rouge</th>
-</tr>
-
-<tr>
-<th class="BarreVide"> Barre VIDE</th>
-</tr>
-</table>
+        <div>
+            <div class="BarreRouge"></div>
+            <div class="BarreVide"></div>
+        </div>
+    </div>
+</div>
 
 </header>

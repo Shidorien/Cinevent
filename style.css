@@ -3,13 +3,13 @@
 body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(black, #220202);margin: 0;padding: 0;background-attachment: fixed;} /*modification général sur toutes les pages du site*/
 .container {margin: auto;padding-top: 70px;}
 .box {width: 75%;margin: auto;padding: 10px;background-color: white;border-radius: 20px;} /*Ajoute un fond blanc avec les bord arrondie */
-.Boutton_Menu {padding: 7px 17px;border-radius: 3px;color:white;background: rgba(229,9,20,1);line-height: 14px;text-decoration: none;border: 0;}
+.Boutton_Menu {padding: 7px 17px;border-radius: 3px;background: #e50914;border: 0;}
+.Boutton_Menu a {text-decoration: none;color:white;}
 h2{margin: 0!important;}
 
 /* CSS Header
 header {position: fixed;width: 100%;background-color:#393939;z-index: 2;}
 header ul {list-style-type: none;margin: 0;overflow: hidden;padding: 5px 0 5px 0;}
-header ul.container {padding-top: 5px;width: 1370px;}
 
 header ul li:first-child{float: left!important;} 
 header ul li:first-child img {height: 45px;}
@@ -23,10 +23,20 @@ Header li:not(:first-child) {height: 46px;line-height: 46px;white-space: nowrap;
 */
 
 /* CSS Header*/
-.Tab_Head {width: 100%;background-color:#393939;z-index: 4;}
-.Tab_Head .Logo {border-radius: 0 0 20px;z-index: 3;}
-.Tab_Head .BarreRouge {border-radius: 20px 0 0;z-index: 3;}
-.Tab_Head .BarreVide {background-color: black;z-index: 3;}
+.Head {display:flex;max-height: 98px;}
+
+
+.Head .Bouton {height: 60px;display: flex;}
+.Head .Bouton ul {list-style-type: none;margin: 0;overflow: hidden;padding: 0;margin: auto 0;}
+.Head .Bouton li {float: right;}
+
+
+.Head .HorsLogo {background-color:#393939;width: 75%;}
+.Head .Logo {border-radius: 0 0 20px;background-color:#393939;width: 25%; }
+.Head .Logo img {height: 80%;margin: auto;}
+.Head .Logo a {float: right;margin-right: 20px;height: 100%;display: flex;}
+.Head .BarreRouge {height: 18px;border-radius: 20px 0 0;background-color:#e50914; border-left: 2px solid black;border-top: 2px solid black;box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.5) inset;}
+.Head .BarreVide {height: 18px;background-color: black;}
 
 
 /*Page accueil*/
