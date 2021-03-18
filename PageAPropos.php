@@ -54,6 +54,8 @@
 </div>
 
 </section>
+
+<?php include 'Footer.php' ?>
 </body>
 
 

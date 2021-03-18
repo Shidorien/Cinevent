@@ -29,9 +29,7 @@
 
         <div>
             <div class="BarreRouge"></div>
-            <div class="BarreVide"></div>
         </div>
     </div>
 </div>
-
 </header>

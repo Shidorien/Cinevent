@@ -49,8 +49,10 @@ body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(blac
 .Head {
     display: flex;
     max-height: 98px;
+    position: fixed;
+    width: 100%;
 }
-
+.test {width: 10000px;display: block;}
 .Head .Bouton {
     height: 60px;
     display: flex;
@@ -75,6 +77,7 @@ body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(blac
 .Head .HorsLogo {
     background-color: #393939;
     width: 75%;
+    margin-bottom: 18px;
 }
 
 .Head .Logo {
@@ -104,10 +107,30 @@ body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(blac
     box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
 }
 
-.Head .BarreVide {
+
+/*Page footer*/
+.footer .BarreRouge {
     height: 18px;
-    background-color: black;
+    border-radius: 0 0 0 20px;
+    background-color: #e50914;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 1px -2px 5px 0 rgba(0, 0, 0, 0.5) inset;
 }
+.footer .BarreVide {
+    height: 18px;
+    background-color: #393939;
+    margin-top: 18px;
+}
+
+.footer {
+    display: flex;
+margin-top: 5%;
+}
+.footer .gauche {
+    width: 75%;
+}
+.footer .droite {background-color: #393939; width: 25%;height: 36px; border-radius: 0 20px 0 0;}
 
 
 /*Page accueil*/
