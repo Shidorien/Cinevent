@@ -9,51 +9,71 @@
 
 <body>
     <?php include 'Header.php' ?>
-    <?php include 'Script/Fonction.php' ?>
+    
     <?php
+    $requete ='SELECT * FROM articles';
+    $rs=requete($requete);
 
-    if (connectionBdd())
-        {
-            $req = "SELECT TEXTE_Texte , FILM_couverture , FILM_Prix "
+	$listefilm = array();
+	do
+	{
+	$film = $rs->fetch(PDO::FETCH_NUM);
+	if ($film) 
+	{
+		$listefilm[] = $film;
+	}
+	}
+	while ($film);
 
-        if 
-            ($resultatRequete) {
+
+    
+    echo "  <form id='panier' action='' name='panier' method='POST'>";
+    
+            $requete ='SELECT * FROM articles';
+            $listfilm=requete($requete);
+            
+        if ($listfilm) {
                 print '<section class="container PageAccueil">';
-                while($ligneResultat = mysql_fetch_array($resultatRequete))
+                $k=1;
+                while($film =$listfilm->fetch(PDO::FETCH_NUM))
                 {
-                  print '
-                        <div class="film"><img src="/Images/'.$ligneResultat[10].'">
-                        
-                        <span>
-                            <h1>'.$ligneResultat[1].'</h1> <!-- titre -->
-                            <hr>
-                            <P>'.$ligneResultat[2].'</p> <!-- resumer -->
-                            <hr>';
-                        if (!empty($_SESSION['email']))
-                            {
-                                print
-                                '<div class="bouton+prix">
-                                <h2 class="prix">'.$ligneResultat[9].'€</h2> <!-- prix -->
-                                <button class="button" type="button">+</button>
-                                
-                                </div>';
-                            }
-                            print
-                            
-                            '</span>
-                        </div> 
-                        
-                    ';
+                    if (isset($_POST["ajpanier".$k]))
+                        {
+                            $req="insert into panier values(NULL,".$k.",5,'".$_SESSION['email']."');";
+                            $rs=requete($req);
+                        }
+                        print '
+                            <div class="film"><img src="/GerardRadeCinevent/Images/FR/'.$film[10].'">
+                                    
+                            <span>
+                                <h1>'.$film[1].'</h1> <!-- titre -->
+                                <hr>
+                                <P>'.$film[2].'</p> <!-- resumer -->
+                                <hr>';
+                                if (!empty($_SESSION['email']))
+                                {
+                                    print
+                                        '<div class="bouton+prix">
+                                        <h2 class="prix">'.$film[9].'€</h2> <!-- prix -->
+                                        <button class="bouton2" type="submit" name="ajpanier'.$k.'" >'.$k.'</button>; 
+                                    </div>';
+                                        $k++;
+                                }
+                                print  
+                                    '</span>
+                                    </div> 
+                                ';
                 }
+                print $k;
                 print '</section>';
             }
         else 
-
+{
             print "Ca marche pas";
         }
-    else print "Echec de la connexion";
+        echo"</form>";
     ?>
-    <a href="panier.php?action=ajout&amp;IdFilm='5'&amp;libelleFilm='yes'&amp;qteFilm='5'&amp;prixFilm='12'" onclick="window.open(this.href, '','toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=600, height=350'); return false;">Ajouter au panier</a>
+    <?php include 'Footer.php' ?>
 </body>
 
 
