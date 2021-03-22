@@ -16,30 +16,33 @@
     <head>
         <meta charset="utf-8">
         <title>CinéVent - Ajouter un film</title>
-        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <!-- <?php include 'Header.php' ?> -->
-        <?php include 'Script/Fonction.php' ?>
+        <?php include 'Header.php' ?>
 
 
-        <b2>Ajouter un film</b2>
+        <section class="AjtFilm container">
+        <div class="box">
 
         <form id='session' action='' name='ajout_film' method='POST'>
             <input type="button" value="français" id="FR" class="Bouton_Onglet"><input type="button" value="anglais" id="EN" class="Bouton_Onglet">
 
-            <p>Couverture (jpg) : </p><input type="file" accept="image/jpg">
+            <h2>Couverture* (jpg) : </h2><input type="file" accept=".jpg" name="file">
+            <div id="preview-file"></div>
 
-            <p>Titre : </p><input type="text" class="Txt_Moyen" name="Titre">
-            <p>Résume : </p><input type="text" class="Txt_paragraphe" name="Resume">
-            <p>Genre : </p> <!-- généré une list de tout les different genre en check bouton--> <input href="#" type="button" value="+" id="Aj_Genre" class="Bouton_Menu" onclick="">
-            <p>Nationalite : </p> <!-- généré une list de tout les differente nationalite en check bouton--> <input type="button" value="+" id="Aj_Natio" class="Bouton_Menu" onclick="">
+            <h2>Titre* : </h2><input type="text" class="Txt_Moyen" name="Titre">
+            <h2>Résume* : </h2><input type="text" class="Txt_paragraphe" name="Resume">
+            <h2>Genre : </h2> <!-- généré une list de tout les different genre en check bouton--> <input  type="button" value="+" id="Aj_Genre" class="Bouton_Menu" onclick="">
+            <h2>Nationalite : </h2> <!-- généré une list de tout les differente nationalite en check bouton--> <input type="button" value="+" id="Aj_Natio" class="Bouton_Menu" onclick="">
 
-            <p>Equipe de tournage :</p>
+            <h2>Equipe de tournage :</h2>
             <!-- généré une list de tout les different role avec leur liste de personnel-->
 
             <input type="submit" value="Envoyer" name="send" class="Bouton_Menu">
         </form>
+        </div>
+        </section>
+        <?php include 'Footer.php' ?>
     </body>
 </html>

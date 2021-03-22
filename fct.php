@@ -28,4 +28,13 @@ function requete($req) {
       }
  return ($rs);
 }
-?>
+
+
+function affiche_Catalogue()
+{
+
+$requete = "SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture
+FROM titre,resume,film
+Where film.FILM_Id = titre.FILM_ID
+AND film.FILM_Id = resume.FILM_Id";
+}
