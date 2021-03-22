@@ -2,7 +2,7 @@
 <?php session_start ();?>
 <?php include 'fct.php' ;
 
-if(isset($_GET['LAN'])){if($_GET['LAN'] == "en"){include "Traduction/EN.php";}else{include "Traduction/FR.php";}}else{include "Traduction/FR.php";}
+if(isset($_GET['LAN'])){if($_GET['LAN'] == "2"){include "Traduction/EN.php";}else{include "Traduction/FR.php";}}else{include "Traduction/FR.php";}
 
 ?>
 
@@ -17,8 +17,8 @@ if(isset($_GET['LAN'])){if($_GET['LAN'] == "en"){include "Traduction/EN.php";}el
         <li >
         <form name="Langue" method="GET">
             <select name='LAN' id='LAN' class="Bouton_Menu" onchange='javascript:submit();'>
-                <option value='fr' <?php if(isset($_GET['LAN'])){if($_GET['LAN'] == "fr"){echo ' selected';}} ?>> FR </option>
-                <option value='en' <?php if(isset($_GET['LAN'])){if($_GET['LAN'] == "en"){echo ' selected';}} ?>> EN </option>
+                <option value='1' <?php if(isset($_GET['LAN'])){if($_GET['LAN'] == "1"){echo ' selected';}} ?>> FR </option>
+                <option value='2' <?php if(isset($_GET['LAN'])){if($_GET['LAN'] == "2"){echo ' selected';}} ?>> EN </option>
 
             </select>
                 </form></li>
