@@ -34,13 +34,13 @@ else
 
         <?php if (isset($_SESSION['email']))
         {?>
-            <li class="Boutton_Menu"><a href="script/deconnexion.php">Deconnexion</a></li>
+            <li class="Bouton_Menu"><a href="script/deconnexion.php">Deconnexion</a></li>
         <?php
         }
         else
         {
         ?>
-            <li class="Boutton_Menu"><a href="PageConnexion.php">Connexion</a></li>
+            <li class="Bouton_Menu"><a href="PageConnexion.php">Connexion</a></li>
         <?php
         }
         ?>

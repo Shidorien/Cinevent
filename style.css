@@ -8,19 +8,20 @@ body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(blac
 
 form div+div {margin-top: 0!important;}
 
-.Boutton_Menu {
+.Bouton_Menu {
     padding: 7px 17px;
     border-radius: 3px;
     background: #e50914;
     border: 0;
+    color: white;
 }
 
-.Boutton_Menu a {
+.Bouton_Menu a {
     text-decoration: none;
     color: white;
 }
 
-.Boutton_Recherche {
+.Bouton_Recherche {
     padding: 7px 17px;
     border-radius: 0 3px 3px 0;
     background: #e50914;
@@ -29,7 +30,7 @@ form div+div {margin-top: 0!important;}
     margin-left: 0 !important;
 }
 
-.Boutton_Recherche img {
+.Bouton_Recherche img {
     height: 18px;
 }
 
@@ -226,7 +227,7 @@ section.PageAccueil span h2 {color: white;text-align: right;height: 28px;margin-
 section.PageAccueil span {position: absolute; height: inherit; width: inherit;}
 section.PageAccueil span p {overflow: scroll;position: relative;} /*ajoute une scrollbar lorsque le texte deborde*/
 section.PageAccueil span p::-webkit-scrollbar {display: none;} /*cache la scrollbar sans la désactivé */ 
-section.PageAccueil button {font-size: 1.5em;height: 1.5em;width: 1.5em;text-align: center;padding: 0;line-height: 0;} /*boutton ajout au panier */
+section.PageAccueil button {font-size: 1.5em;height: 1.5em;width: 1.5em;text-align: center;padding: 0;line-height: 0;} /*Bouton ajout au panier */
 section.PageAccueil div.boutonprix {margin-top: 0!important ;min-height: 10em;display: table-cell;vertical-align: middle; width: inherit;}
 
 /*Page Contact*/
