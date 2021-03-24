@@ -29,7 +29,7 @@
     
     echo "  <form id='panier' action='' name='panier' method='POST'>";
     
-            $requete ='SELECT * FROM articles';
+            $requete ='SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id='.$Langue.' AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id='.$Langue;
             $listfilm=requete($requete);
             
         if ($listfilm) {

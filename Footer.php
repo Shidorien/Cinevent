@@ -20,17 +20,17 @@
 <div class="Info">
     <div>
     <table classe="Aide">
-    <tr><th>Aide</th></tr>
+    <tr><th><?php echo $Aide ?></th></tr>
     <tr><th><hr></th></tr>
-    <tr><td><a href="#">Commandes</a></td></tr>
-    <tr><td><a href="#">Livraison</a></td></tr>
-    <tr><td><a href="#">Retour</a></td></tr>
-    <tr><td><a href="#">F.A.Q</a></td></tr>
-    <tr><td><a href="#">Contacter le support</a></td></tr>
+    <tr><td><a href="#"><?php echo $Commandes ?></a></td></tr>
+    <tr><td><a href="#"><?php echo $Livraison ?></a></td></tr>
+    <tr><td><a href="#"><?php echo $Retour ?></a></td></tr>
+    <tr><td><a href="#"><?php echo $FAQ ?></a></td></tr>
+    <tr><td><a href="#"><?php echo $ContactSupport ?></a></td></tr>
     </table>
 
-    <table classe="Coordonees">
-    <tr><th>Coordonées</th></tr>
+    <table classe="Coordonnees">
+    <tr><th><?php echo $Coordonnees ?></th></tr>
     <tr><th><hr></th></tr>
     <tr><td>22 rue du Cinema</td></tr>
     <tr><td>54000, NANCY</td></tr>
@@ -39,9 +39,15 @@
     </table>
 
     <table classe="Genre">
-    <tr><th>Genre</th></tr>
+    <tr><th><?php echo $Genre ?></th></tr>
     <tr><th><hr></th></tr>
-    <!-- genere la liste des genre avec le php-->
+    <?php
+    $requete ='SELECT GENRE_Lib FROM genre where LAN_Id='.$Langue;
+    $listGenre=requete($requete);
+    while($Genre =$listGenre->fetch(PDO::FETCH_NUM))
+            {
+                echo "<tr><td><a href='#'>".$Genre[0]."</a></td></tr>";
+            }?>
     </table>
 <div>
     <div class="Logo"><a href="PageAccueil.php"><img src="/GerardRadeCinevent/images/logo.png"></a></div>
