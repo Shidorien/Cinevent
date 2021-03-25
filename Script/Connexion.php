@@ -3,6 +3,7 @@
 Page: connexion.php
 */
 session_start(); // � mettre tout en haut du fichier .php, cette fonction propre � PHP servira � maintenir la $_SESSION
+include "fct.php";
 if(isset($_POST['connexion'])) { 
     if(empty($_POST['email'])) {
         echo "Le champ email est vide.";
@@ -15,7 +16,7 @@ if(isset($_POST['connexion'])) {
             $email = htmlentities($_POST['email'], ENT_QUOTES, "ISO-8859-1"); // le htmlentities() passera les guillemets en entit�s HTML, ce qui emp�chera les injections SQL
             $MotDePasse = htmlentities($_POST['motDePasse'], ENT_QUOTES, "ISO-8859-1");
             //on se connecte � la base de donn�es:
-            $mysqli = mysqli_connect("127.0.0.1", "root", "", "gerard_mancuso_cinevent_bd");
+            $mysqli = connectionBdd();
             //on v�rifie que la connexion s'effectue correctement:
             if(!$mysqli){
                 echo "Erreur de connexion � la base de donn�es.";

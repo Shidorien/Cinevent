@@ -11,19 +11,19 @@
     <?php include 'Header.php' ?>
     
     <?php
-    $requete ='SELECT * FROM articles';
-    $rs=requete($requete);
+    // $requete ='SELECT * FROM articles';
+    // $rs=requete($requete);
 
-	$listefilm = array();
-	do
-	{
-	$film = $rs->fetch(PDO::FETCH_NUM);
-	if ($film) 
-	{
-		$listefilm[] = $film;
-	}
-	}
-	while ($film);
+	// $listefilm = array();
+	// do
+	// {
+	// $film = $rs->fetch(PDO::FETCH_NUM);
+	// if ($film) 
+	// {
+	// 	$listefilm[] = $film;
+	// }
+	// }
+	// while ($film);
 
 
     
@@ -43,18 +43,18 @@
                             $rs=requete($req);
                         }
                         print '
-                            <div class="film"><img src="/GerardRadeCinevent/Images/FR/'.$film[10].'">
+                            <div class="film"><img src="/GerardRadeCinevent/Images/FR/'.$film[3].'">
                                     
                             <span>
-                                <h1>'.$film[1].'</h1> <!-- titre -->
+                                <h1>'.$film[0].'</h1> <!-- titre -->
                                 <hr>
-                                <P>'.$film[2].'</p> <!-- resumer -->
+                                <P>'.$film[1].'</p> <!-- resumer -->
                                 <hr>';
                                 if (!empty($_SESSION['email']))
                                 {
                                     print
                                         '<div class="bouton+prix">
-                                        <h2 class="prix">'.$film[9].'€</h2> <!-- prix -->
+                                        <h2 class="prix">'.$film[2].'€</h2> <!-- prix -->
                                         <button class="bouton2" type="submit" name="ajpanier'.$k.'" >'.$k.'</button>; 
                                     </div>';
                                         $k++;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>CinéVent - Connexion</title>
-    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>

@@ -2,9 +2,9 @@
 /*Module*/
 h2{margin: 0!important;}
 body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(black, #220202);margin: 0;padding: 0;background-attachment: fixed;} /*modification général sur toutes les pages du site*/
-.container {margin: auto;padding-top: 70px;}
+.container {margin: auto;padding-top: 70px;height: 53em;}
 
-.box {width: 75%;margin: auto;padding: 10px;background-color: white;border-radius: 20px;} /*Ajoute un fond blanc avec les bord arrondie */
+.box {width: 75%;margin: auto;padding: 50px 28px;background-color: white;} /*Ajoute un fond blanc avec les bord arrondie */
 
 form div+div {margin-top: 0!important;}
 
@@ -140,6 +140,7 @@ form div+div {margin-top: 0!important;}
 
 .footer .gauche {
     width: 75%;
+    z-index: 999;
 }
 
 .footer .droite {
@@ -147,6 +148,7 @@ form div+div {margin-top: 0!important;}
     width: 25%;
     height: 36px;
     border-radius: 0 20px 0 0;
+    z-index: 999;
 }
 
 .Social {
@@ -168,6 +170,7 @@ form div+div {margin-top: 0!important;}
     padding-top: 50px;
     padding-bottom: 45px;
     color: grey;
+    z-index: 999;
 }
 
 .Info hr {
