@@ -1,0 +1,2 @@
+25-03-21 05:46 : fichier : \\172.16.2.12\C$\Program Files\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT GENRE_Lib FROM genre where LAN_Id=fr
