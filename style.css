@@ -6,8 +6,6 @@ body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(blac
 
 .box {width: 75%;margin: auto;padding: 50px 28px;background-color: white;} /*Ajoute un fond blanc avec les bord arrondie */
 
-.imgPreview {width: 300px;height: 400px;}
-
 .Bouton_Menu {
     padding: 7px 17px;
     border-radius: 3px;
