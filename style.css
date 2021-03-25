@@ -2,7 +2,7 @@
 /*Module*/
 h2{margin: 0!important;}
 body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(black, #220202);margin: 0;padding: 0;background-attachment: fixed;} /*modification général sur toutes les pages du site*/
-.container {margin: auto;padding-top: 70px;height: 53em;}
+.container {margin: auto;padding-top: 70px;min-height: 53em;}
 
 .box {width: 75%;margin: auto;padding: 50px 28px;background-color: white;} /*Ajoute un fond blanc avec les bord arrondie */
 
