@@ -1,4 +1,7 @@
 <?PHP
+if(isset($_GET['LAN'])){if($_GET['LAN'] == "fr"){$_SESSION['LAN'] = "fr";}}
+if(isset($_GET['LAN'])){if($_GET['LAN'] == "en"){$_SESSION['LAN'] = "en";}}
+
 function connectionBdd()
 {
 	$host='127.0.0.1';
@@ -87,9 +90,9 @@ function getUrl()
 
 function getLan()
 {
-	if(isset($_GET['LAN']))
+	if(isset($_SESSION['LAN']))
 	{
-		if($_GET['LAN'] == "en")
+		if($_SESSION['LAN'] == "en")
 		{
 			$CLan = "Data/Traduction/EN.php";
 		}

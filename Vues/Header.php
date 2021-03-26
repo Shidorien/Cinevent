@@ -2,27 +2,11 @@
 
 <header>
 
-<?php
-if(isset($_GET['LAN']))
-{
-    if($_GET['LAN'] == "en")
-    {
-        include "Data/Traduction/EN.php";
-    }
-    else
-    {
-        include "Data/Traduction/FR.php";
-    }
-}
-else
-{
-    include "Data/Traduction/FR.php";
-} ?>
 
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="script/script.js"></script>
 
-<form name="Langue" method="GET">
+<form name="Langue" method="get">
 
 <div class="Head">
     <div class="Logo"><a href="index.php"><img src="/GerardRadeCinevent/Data/images/logo.png"></a></div>
@@ -31,8 +15,8 @@ else
         <ul>
         <li >
             <select name='LAN' id='LAN' class="Bouton_Menu" onchange='javascript:submit();'>
-                <option value='fr' <?php if(isset($_GET['LAN'])){if($_GET['LAN'] == "fr"){echo ' selected';}} ?>> FR </option>
-                <option value='en' <?php if(isset($_GET['LAN'])){if($_GET['LAN'] == "en"){echo ' selected';}} ?>> EN </option>
+                <option value='fr' <?php if(isset($_SESSION['LAN'])){if($_SESSION['LAN'] == "fr"){echo ' selected';}} ?>> FR </option>
+                <option value='en' <?php if(isset($_SESSION['LAN'])){if($_SESSION['LAN'] == "en"){echo ' selected';}} ?>> EN </option>
 
             </select>
         </li>
