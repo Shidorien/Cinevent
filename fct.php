@@ -65,6 +65,7 @@ function getUrl()
 {
 	if(isset($_GET["srv"]))
 	{
+		include getLan();
 		$req="select serv_url from service where serv_id=".$_GET["srv"]."";
   		$rs=requete($req);
   		@$row=$rs->fetch(PDO::FETCH_NUM); 
@@ -73,13 +74,34 @@ function getUrl()
 		  if ($url=='') {
 			echo "<div id='msg_erreur'>".$ServiceInconnue."</div>";
 		  }
-		  else{ 
-			include ($url);
-		  }
 	}
 	else
 	{
-		include "Vue/Catalogue.php";
+		$url = "Vues/Catalogue.php";
+
+	}
+	return $url;
+
+}
+
+
+function getLan()
+{
+	if(isset($_GET['LAN']))
+	{
+		if($_GET['LAN'] == "en")
+		{
+			$CLan = "Data/Traduction/EN.php";
+		}
+		else
+		{
+			$CLan = "Data/Traduction/FR.php";
+		}
+	}
+	else
+	{
+		$CLan = "Data/Traduction/FR.php";
 	}
 
+	return $CLan;
 }

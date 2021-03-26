@@ -3,7 +3,7 @@ $Langue = "en";
 
 $ServiceInconnue = "unknown service";
 $Deconnexion = "Log-out";
-$connexion = "Log-in";
+$Connexion = "Log-in";
 $Contact = "Contact";
 $APropos = "About";
 $chercher = "Search";

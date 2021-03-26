@@ -2,7 +2,7 @@
 /*Module*/
 h2{margin: 0!important;}
 body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(black, #220202);margin: 0;padding: 0;background-attachment: fixed;} /*modification général sur toutes les pages du site*/
-.container {margin: auto;padding-top: 70px;min-height: 53em;}
+.container {margin: auto;padding-top: 70px;min-height: 53em;width: 1370px;}
 
 .box {width: 75%;margin: auto;padding: 50px 28px;background-color: white;} /*Ajoute un fond blanc avec les bord arrondie */
 
@@ -219,7 +219,6 @@ form div+div {margin-top: 0!important;}
 }
 
 /*Page accueil*/
-section.PageAccueil {width: 1370px;}
 section.PageAccueil .film {display: inline-block;margin-top: 50px;position: relative; width: 300px;height: 399px;} /*inline block va aligner les image, tandis que la position relative nous permetra de faire une superposition du texte sur l'image */
 section.PageAccueil div:not(:nth-child(4n+4)) {margin-right: 52px;} /*met une séparation sur les image de chaque ligne*/
 section.PageAccueil img {width: inherit;height: inherit;text-align: center;position: absolute;z-index: 1;} /*inherit permet d'heriter la valeur du parent et z-index 1 permet de toujour afficher l'image devant le texte*/

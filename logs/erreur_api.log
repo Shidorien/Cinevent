@@ -12,3 +12,57 @@ select serv_url from service where serv_id=1
 select serv_url from service where serv_id=1
 26-03-21 02:49 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
 select serv_url from service where serv_id=1
+26-03-21 03:32 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:35 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:35 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:36 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:36 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:37 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:38 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:40 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:41 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:42 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:42 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:42 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:42 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:48 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:49 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:49 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:50 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:50 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:50 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:51 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:51 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:51 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:53 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:53 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 03:55 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id= AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=
+26-03-21 04:07 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id=en AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id=en
+26-03-21 04:08 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id"=en" AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id="en"

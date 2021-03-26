@@ -2,23 +2,16 @@
 
 <?php
 
-if(isset($_GET['LAN']))
-{
-    if($_GET['LAN'] == "en")
-    {require "Data/Traduction/EN.php";}
-    else
-    {require "Data/Traduction/FR.php";}
-}
-else
-{require "Data/Traduction/FR.php";}
+session_start ();
+include 'fct.php';
+include getLan();
 
-require 'fct.php';
 
 ?>
 
 <!--HTML------------------------------------------------------------------------>
 
-<html lang= "<?php echo $langue?>">
+<html lang= "<?php echo $Langue?>">
 
 <head>
     <meta charset="utf-8">
@@ -29,16 +22,16 @@ require 'fct.php';
 <!--HEADER------------------------------------------------------------------------>
 <?php
 
-require "Vues/Header.php";
+include "Vues/Header.php";
 
 ?>
 
 <!--CONTROLEUR------------------------------------------------------------------------>
 
-<div class=container>
+<div class="container">
 
     <?php
-    getUrl();
+    include getUrl();
     ?>
 
 </div>
@@ -46,7 +39,7 @@ require "Vues/Header.php";
 <!--FOOTER------------------------------------------------------------------------>
 
 <?php
-require "Vues/Footer.php";
+include "Vues/Footer.php";
 ?>
 
  
