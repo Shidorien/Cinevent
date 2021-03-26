@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <title>CinéVent - Vente en ligne de film</title>
-    <link rel="stylesheet" href="style.css">
-
-
-</head>
-
-<body>
-    <?php include 'Header.php' ?>
-
-    <section class="container">
-
             <div class="box">
                 <h3>Bienvenue sur CinéVent
                     nous faisons de la vente de film en tous genres.</h3>
@@ -43,12 +27,3 @@
 
 
 </div>
-
-</section>
-
-<?php include 'Footer.php' ?>
-</body>
-
-
-
-</html>

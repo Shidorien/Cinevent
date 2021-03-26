@@ -20,7 +20,7 @@
 
             </select>
         </li>
-
+        <form name="" method="get">
         <?php if (isset($_SESSION['email']))
         {?>
             <li class="Bouton_Menu"><a href="script/deconnexion.php"><?php echo $Deconnexion; ?></a></li>
@@ -32,10 +32,8 @@
             <li class="Bouton_Menu"><a href="PageConnexion.php"><?php echo $Connexion; ?></a></li>
         <?php
         }
-        ?>
         
-            <li class="Bouton_Menu"><a href="PageContact.php"><?php echo $Contact; ?></a></li>
-            <li class="Bouton_Menu"><a href="PageAPropos.php"><?php echo $APropos; ?></a></li>
+            const_menu(0)?>
             <li class="Bouton_Recherche"><img src="/GerardRadeCinevent/Data/images/loupe.png"></li>
             <li class="Barre_Recherche"><input type="search" placeholder="<?php echo $chercher; ?>" ></li>
         </ul>

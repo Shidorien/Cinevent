@@ -4,7 +4,6 @@ $Langue = "fr";
 $ServiceInconnue = "Service inconnue";
 $Deconnexion = "Déconnexion";
 $Connexion = "Connexion";
-$Contact = "Contact";
 $APropos = "A propos";
 $chercher = "Rechercher";
 $Commandes = "Commandes";

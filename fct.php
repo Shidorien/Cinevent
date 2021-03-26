@@ -72,7 +72,7 @@ function getUrl()
 		$req="select serv_url from service where serv_id=".$_GET["srv"]."";
   		$rs=requete($req);
   		@$row=$rs->fetch(PDO::FETCH_NUM); 
-  		$url=$row[0];
+  		$url="Vues/".$row[0];
 		
 		  if ($url=='') {
 			echo "<div id='msg_erreur'>".$ServiceInconnue."</div>";
@@ -115,4 +115,17 @@ function listGenre()
 	$requete ='SELECT GENRE_Lib FROM genre where LAN_Id="'.$Langue.'"';
     return requete($requete);
 
+}
+
+function const_menu($id_profil) {
+	include getLan();
+	$req = "SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, service WHERE LAN_Id='".$Langue."' AND service_lib.SERV_id = service.serv_id AND service.serv_id = acceder.idService AND acceder.idProfil=".$id_profil;
+	$rs = requete($req);
+	$i=0;
+	if ($rs) {
+		while ($enreg=$rs->fetch(PDO::FETCH_NUM)) { 
+		  echo "<li class='Bouton_Menu'><a href='index.php?srv=".$enreg[1]."'>".$enreg[0]."</a></li>";
+		}
+		
+	}
 }
