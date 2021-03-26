@@ -1,6 +1,7 @@
 <?php
 $Langue = "fr";
 
+$ServiceInconnue = "Service inconnue";
 $Deconnexion = "Déconnexion";
 $connexion = "Connexion";
 $Contact = "Contact";
@@ -13,5 +14,6 @@ $FAQ = "F.A.Q";
 $ContactSupport = "Contacter le support";
 $Coordonnees = "Coordonnées";
 $Genre = "Genre";
-$Aide = "Aide"
+$Aide = "Aide";
+
 ?>

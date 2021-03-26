@@ -41,32 +41,45 @@ AND film.FILM_Id = resume.FILM_Id";
 
 
 function ecrire_log ($msg,$fichier) {
-    //$filename=$_SERVER["DOCUMENT_ROOT"].'/logs/erreur_api.log';
 	$filename='logs/erreur_api.log';
-	
 	$somecontent = date("d-m-y h:i")." : fichier : ".$fichier." : ".$msg;
-	
-	// Assurons nous que le fichier est accessible en écriture
 	if (is_writable($filename)) {
     if (!$handle = fopen($filename, 'a')) {
 	    echo "Erreur ouverture fichier";
-		//echo "Impossible d'ouvrir le fichier de logs ($filename)<br/>"; // Modif LP le 26-04-2013
 		  exit;
 	  }
-		// Ecrivons quelque chose dans notre fichier.
 		if (fwrite($handle, $somecontent) == FALSE) {
-		  //echo "Impossible d'écrire dans le fichier de logs ($filename)<br/>";
 		  echo "Impossible d'écrire dans le fichier de logs <br/>";
-		  
 		  exit;
 		}
-		// echo "Un message a été reporté dans le fichier de log ($filename). <br/>";// Modif LP le 26-04-2013
-		echo "Un message a ete reporte dans le fichier de log. <br/>";
+		echo "Un message a ete reporte dans le fichier de logs. <br/>";
 		
 		fclose($handle);
 		} else {
-		  // echo "Le fichier $filename n'est pas accessible en écriture.<br/>"; // Modif LP le 26-04-2013
-		  echo "Le fichier de log n'est pas accessible en écriture.<br/>";
+		  echo "Le fichier de logs n'est pas accessible en écriture.<br/>";
 		  
 		}
+}
+
+function getUrl()
+{
+	if(isset($_GET["srv"]))
+	{
+		$req="select serv_url from service where serv_id=".$_GET["srv"]."";
+  		$rs=requete($req);
+  		@$row=$rs->fetch(PDO::FETCH_NUM); 
+  		$url=$row[0];
+		
+		  if ($url=='') {
+			echo "<div id='msg_erreur'>".$ServiceInconnue."</div>";
+		  }
+		  else{ 
+			include ($url);
+		  }
+	}
+	else
+	{
+		include "Vue/Catalogue.php";
+	}
+
 }

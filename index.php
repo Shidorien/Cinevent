@@ -5,14 +5,14 @@
 if(isset($_GET['LAN']))
 {
     if($_GET['LAN'] == "en")
-    {include "Data/Traduction/EN.php";}
+    {require "Data/Traduction/EN.php";}
     else
-    {include "Data/Traduction/FR.php";}
+    {require "Data/Traduction/FR.php";}
 }
 else
-{include "Data/Traduction/FR.php";}
+{require "Data/Traduction/FR.php";}
 
-include 'fct.php';
+require 'fct.php';
 
 ?>
 
@@ -29,7 +29,7 @@ include 'fct.php';
 <!--HEADER------------------------------------------------------------------------>
 <?php
 
-include "Vues/Header.php";
+require "Vues/Header.php";
 
 ?>
 
@@ -37,12 +37,16 @@ include "Vues/Header.php";
 
 <div class=container>
 
+    <?php
+    getUrl();
+    ?>
+
 </div>
 
 <!--FOOTER------------------------------------------------------------------------>
 
 <?php
-include "Vues/Footer.php";
+require "Vues/Footer.php";
 ?>
 
  
