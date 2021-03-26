@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="script/script.js"></script>
 
-<form name="Langue" method="get">
+<form name="Langue" method="post">
 
 <div class="Head">
     <div class="Logo"><a href="index.php"><img src="/GerardRadeCinevent/Data/images/logo.png"></a></div>

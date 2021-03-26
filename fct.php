@@ -1,6 +1,6 @@
 <?PHP
-if(isset($_GET['LAN'])){if($_GET['LAN'] == "fr"){$_SESSION['LAN'] = "fr";}}
-if(isset($_GET['LAN'])){if($_GET['LAN'] == "en"){$_SESSION['LAN'] = "en";}}
+if(isset($_POST['LAN'])){if($_POST['LAN'] == "fr"){$_SESSION['LAN'] = "fr";}}
+if(isset($_POST['LAN'])){if($_POST['LAN'] == "en"){$_SESSION['LAN'] = "en";}}
 
 function connectionBdd()
 {
