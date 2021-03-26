@@ -108,3 +108,11 @@ function getLan()
 
 	return $CLan;
 }
+
+function listGenre()
+{
+	include getLan();
+	$requete ='SELECT GENRE_Lib FROM genre where LAN_Id="'.$Langue.'"';
+    return requete($requete);
+
+}

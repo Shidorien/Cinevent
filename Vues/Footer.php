@@ -42,8 +42,7 @@
     <tr><th><?php echo $Genre ?></th></tr>
     <tr><th><hr></th></tr>
     <?php
-    $requete ='SELECT GENRE_Lib FROM genre where LAN_Id="'.$Langue.'"';
-    $listGenre=requete($requete);
+    $listGenre= listGenre();
     while($Genre =$listGenre->fetch(PDO::FETCH_NUM))
             {
                 echo "<tr><td><a href='#'>".$Genre[0]."</a></td></tr>";
