@@ -88,3 +88,11 @@ SELECT service_lib.SERV_Lib, acceder.serv_id FROM service_lib, acceder WHERE LAN
 SELECT service_lib.SERV_Lib, acceder.serv_id FROM service_lib, acceder WHERE LAN_Id='fr AND service.serv_id = acceder.idService AND acceder.idProfil=0
 26-03-21 11:53 : fichier : \\172.16.2.12\C$\Program Files\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
 SELECT service_lib.SERV_Lib, acceder.serv_id FROM service_lib, acceder WHERE LAN_Id='fr AND service.serv_id = acceder.idService AND acceder.idProfil=0
+23-05-21 10:03 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, service WHERE LAN_Id='fr' AND service_lib.SERV_id = service.serv_id AND service.serv_id = acceder.idService AND acceder.idProfil=0
+23-05-21 10:03 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, service WHERE LAN_Id='en' AND service_lib.SERV_id = service.serv_id AND service.serv_id = acceder.idService AND acceder.idProfil=0
+23-05-21 10:03 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, service WHERE LAN_Id='fr' AND service_lib.SERV_id = service.serv_id AND service.serv_id = acceder.idService AND acceder.idProfil=0
+25-05-21 08:51 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, service WHERE LAN_Id='fr' AND service_lib.SERV_id = service.serv_id AND service.serv_id = acceder.idService AND acceder.idProfil=0
