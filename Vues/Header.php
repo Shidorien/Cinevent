@@ -21,15 +21,16 @@
             </select>
         </li>
         <form name="" method="get">
-        <?php if (isset($_SESSION['email']))
+        <?php 
+        if (isset($_SESSION['email']))
         {?>
-            <li class="Bouton_Menu"><a href="script/deconnexion.php"><?php echo $Deconnexion; ?></a></li>
+            <li class="Bouton_Menu"><a href="index.php?srv=4"><?php echo $Deconnexion; ?></a></li>
         <?php
         }
         else
         {
         ?>
-            <li class="Bouton_Menu"><a href="PageConnexion.php"><?php echo $Connexion; ?></a></li>
+            <li class="Bouton_Menu"><a href='index.php?srv=3'><?php echo $Connexion; ?></a></li>
         <?php
         }
         

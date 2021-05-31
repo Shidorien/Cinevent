@@ -96,3 +96,13 @@ SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, servic
 SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, service WHERE LAN_Id='fr' AND service_lib.SERV_id = service.serv_id AND service.serv_id = acceder.idService AND acceder.idProfil=0
 25-05-21 08:51 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
 SELECT service_lib.SERV_Lib, acceder.idService FROM service_lib, acceder, service WHERE LAN_Id='fr' AND service_lib.SERV_id = service.serv_id AND service.serv_id = acceder.idService AND acceder.idProfil=0
+01-06-21 12:06 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+SELECT * FROM utilisateur WHERE mail  = 'gaetangerard@hotmail.fr' AND mdp = 'asmin208'
+01-06-21 12:23 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+insert into panier values(NULL,4,5,'gaetangerard@hotmail.fr');
+01-06-21 12:23 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+insert into panier values(NULL,9,5,'gaetangerard@hotmail.fr');
+01-06-21 12:24 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+insert into panier values(NULL,10,5,'gaetangerard@hotmail.fr');
+01-06-21 12:24 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+insert into panier values(NULL,10,5,'gaetangerard@hotmail.fr');
