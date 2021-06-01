@@ -8,6 +8,14 @@ body {font-family: Arial, Helvetica, sans-serif;background: linear-gradient(blac
 
 form div+div {margin-top: 0!important;}
 
+.Saisie {
+    border: 0;
+    border-bottom: 5px solid #e50914;
+    background-color: lightgray;
+    border-radius: 0;
+    padding: 15px 20px;
+}
+
 .Bouton_Menu {
     padding: 7px 17px;
     border-radius: 3px;
@@ -16,6 +24,9 @@ form div+div {margin-top: 0!important;}
     color: white;
     width: max-content;
     height: auto;
+}
+.Bouton_Menu:hover{
+    cursor: pointer;
 }
 
 .Bouton_Menu a {
@@ -252,21 +263,27 @@ margin-top: 50vh;
 transform: translateY(-100%);
 box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.3) ;
 border-radius: 20px;
+text-align: center;
+border: 3px solid #000000;
 }
+.Connexion input {margin-top: 20px;}
 
-.Saisie {
-    padding: 10px 20px;
-    border: 0;
-    border-bottom: 5px solid #e50914;
-    background-color: lightgray;
-    border-radius: 0;
-}
 
-.Connexion div:nth-child(3){text-align: center;}
+
 
 /*Page Inscription*/
-section.PageInscription .button {width : auto} /* Donne une taille automatique au bouton valider */
-
+.inscription {
+    background-color: lightgray;
+width: max-content;
+padding: 2%;
+margin: auto;
+margin-top: 41vh;
+transform: translateY(-49%);
+box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.3) ;
+border-radius: 20px;
+text-align: center;
+}
+.inscription input {margin-top: 20px;}
 /*Page Panier*/
 
 
@@ -302,20 +319,4 @@ textarea:focus {
 textarea {
     vertical-align: top;
     height: 5em;
-}
-
-
-
-
-/*A TRANSFERER*/
-
-section.PageInscription label {
-    display: block;
-}
-
-section.PageInscription label:nth-child(2) {
-    font-size: 12px;
-    color: red;
-    padding-top: 5px;
-    display: none;
 }

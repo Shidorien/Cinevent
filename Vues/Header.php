@@ -1,3 +1,5 @@
+<?php if (isset($_POST['deco'])){deconnexion();}?>
+
 
 
 <header>
@@ -24,7 +26,10 @@
         <?php 
         if (isset($_SESSION['email']))
         {?>
-            <li class="Bouton_Menu"><a href="index.php?srv=4"><?php echo $Deconnexion; ?></a></li>
+        <form>
+            <li><input type="submit" id="deco" name="deco" class="Bouton_Menu" value="<?php echo $Deconnexion; ?>"></li>
+            
+            </form>
         <?php
         }
         else

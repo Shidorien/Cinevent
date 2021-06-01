@@ -1,15 +1,13 @@
 <div class="Connexion">
     <form action="fct.php" method="POST" name="Connexion1">
-        <h2><?php $Connexion ?></h2>
+        <h2><?php echo $Connexion ?></h2>
         <div>
-            <label for="mail">e-mail</label><br>
-            <input type="email" id="email" name="email" class="Saisie">
+            <input type="email" id="email" name="email" class="Saisie" placeholder="E-mail" >
         </div>
 
         <div>
-            <label for="password">mot de passe</label><br>
-            <Input type="password" id="motDePasse" name="motDePasse" class="Saisie"> <br>
-        </div>
+            <Input type="password" id="motDePasse" name="motDePasse" class="Saisie" placeholder="Mot de passe" > 
+        </div><br>
         <div>
             <input type="submit" name="connexion" value="Connexion" class="Bouton_Menu" /><br>
             <a href="index.php?srv=5">Inscription</a>

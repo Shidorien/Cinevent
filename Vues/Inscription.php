@@ -6,39 +6,29 @@
 ?>
 
 <div class="inscription">
+<h2>Inscription</h2>
     <form action="#" method="post" name="inscription">
         <div>
-            <label for="nom">Nom :*</label>
-            <label>Indiquez votre Nom.</label>
-            <input type="text" id="name" name="nom" class="input">
+            <input type="text" id="name" name="nom" class="Saisie" placeholder="Nom*">
         </div>
         <div>
-            <label for="pnom">Prénom :</label>
-            <input type="text" id="pname" name="pnom" class="input">
+            <input type="text" id="pname" name="pnom" class="Saisie" placeholder="Prénom">
         </div>
         <div>
-            <label for="Date de naissance">Date de naissance :*</label>
-            <label>Indiquez votre date de naissance.</label>
-            <input type="date" id="dateNais" name="dateNais" class="input">
+            <input type="date" id="dateNais" name="dateNais" class="Saisie" placeholder="Date de naissance*">
         </div>
 
         <div>
-            <label for="mail">e-mail :*</label>
-            <label>Indiquez votre e-mail.</label>
-            <input type="email" id="email" name="email" class="input">
+            <input type="email" id="email" name="email" class="Saisie" placeholder="E-mail*">
         </div>
 
         <div>
-            <label for="password">mot de passe :*</label>
-            <label>Indiquez votre mot de passe</label>
-            <Input type="password" id="motDePasse" name="motDePasse" class="input"> <br>
+            <Input type="password" id="motDePasse" name="motDePasse" class="Saisie" placeholder="mot de passe*"> <br>
         </div>
         <div>
-            <label for="password">confirmer le mot de passe :*</label>
-            <label>Les mots de passe ne correspondent pas</label>
-            <Input type="password" id="verifMotDePasse" name="verifMotDePasse" class="input"> <br>
+            <Input type="password" id="verifMotDePasse" name="verifMotDePasse" class="Saisie" placeholder="E-confirmer le mot de passe*"> <br>
         </div>
-        <input class="button" onclick="verif(this.form)" type="button" value="Valider">
+        <input class="Bouton_Menu" onclick="verif(this.form)" type="button" value="Valider">
     </form>
 </div>
 
