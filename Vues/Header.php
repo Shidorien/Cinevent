@@ -4,7 +4,7 @@
 
 
 <link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 <form name="Langue" method="post">
 

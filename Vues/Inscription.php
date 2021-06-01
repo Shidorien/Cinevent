@@ -1,5 +1,12 @@
+<?php
+    if (isset($_POST['nom']) && isset($_POST['pnom']) && isset($_POST['dateNais']) && isset($_POST['email']) && isset($_POST['motDePasse']) && isset($_POST['verifMotDePasse']) )
+    {
+        inscription($_POST['email'],$_POST['nom'],$_POST['pnom'],$_POST['dateNais'],$_POST['motDePasse']);
+    }
+?>
+
 <div class="inscription">
-    <form action="fct.php" method="get" name="inscription1">
+    <form action="#" method="post" name="inscription">
         <div>
             <label for="nom">Nom :*</label>
             <label>Indiquez votre Nom.</label>
@@ -34,3 +41,4 @@
         <input class="button" onclick="verif(this.form)" type="button" value="Valider">
     </form>
 </div>
+

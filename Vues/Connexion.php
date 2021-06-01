@@ -11,7 +11,7 @@
                 </div>
                 <ul>
                     <input type="submit" name="connexion" value="Connexion" class="button" />
-                    <li><a href="PageInscription.php">Inscription</a></li>
+                    <li><a href="index.php?srv=5">Inscription</a></li>
                 </ul>
             </form>
         </div>

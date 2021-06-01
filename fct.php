@@ -136,6 +136,14 @@ session_destroy ();
 header("Location: http://localhost/GerardRadeCinevent/index.php");
 }
 
+function connexion($email,$motDePasse)
+{
+	
+}
+// A TRANSFORMER EN FUNCTION !!!!!
+
+
+
 if(isset($_POST['connexion'])) { 
 	session_start();
     if(empty($_POST['email'])) {
@@ -162,3 +170,12 @@ if(isset($_POST['connexion'])) {
             }
         }
     }
+
+
+	function inscription($email,$nom,$pnom,$dateNais,$motDePasse)
+	{
+    $rs = requete("INSERT into utilisateur values ('(SELECT MAX( `USER_Id` )+1 FROM utilisateur)','".$nom."','".$pnom."','".$email."','".$dateNais."','".$motDePasse."','2')");
+    if($rs) {print "Votre saisie a été prise en compte ";}
+    else {print "Impossible d'envoyer les donnees";}
+    }
+	

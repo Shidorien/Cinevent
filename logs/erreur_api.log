@@ -106,3 +106,11 @@ insert into panier values(NULL,9,5,'gaetangerard@hotmail.fr');
 insert into panier values(NULL,10,5,'gaetangerard@hotmail.fr');
 01-06-21 12:24 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
 insert into panier values(NULL,10,5,'gaetangerard@hotmail.fr');
+01-06-21 01:14 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+INSERT into utilisateur values (SELECT MAX( `USER_Id` )+1 FROM utilisateur),sfsefse','andré','rt@ufs.fr','2021-06-10','123','2')
+01-06-21 01:18 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+INSERT into utilisateur values ((SELECT MAX( `USER_Id` )+1 FROM utilisateur),'sfsefse','andré','rt@ufs.fr','2021-06-10','123','2')
+01-06-21 01:22 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+INSERT into utilisateur values (('SELECT MAX( `USER_Id` )+1 FROM utilisateur)','sfsefse','andré','rt@ufs.fr','2021-06-10','123','2')
+01-06-21 01:23 : fichier : C:\Users\Le panda roux\Documents\EasyPHP-5.3.3\www\GerardRadeCinevent\fct.php : erreur SQL :Array
+INSERT into utilisateur values (('SELECT MAX( `USER_Id` )+1 FROM utilisateur)','adadawd','awdawdaw','dawdwa','2021-06-03','123','2')
