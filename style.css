@@ -243,8 +243,26 @@ section.PageContact div.fl {float: left;}
 section.PageContact div:nth-child(4) {margin-left: 90px;}
 
 /*Page Connexion*/
-section.PageConnexion li {text-decoration :none;display: block;text-align:center}
-section.PageConnexion ul {padding : 0;text-align:center}
+.Connexion {
+background-color: lightgray;
+width: max-content;
+padding: 1%;
+margin: auto;
+margin-top: 50vh;
+transform: translateY(-100%);
+box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.3) ;
+border-radius: 20px;
+}
+
+.Saisie {
+    padding: 10px 20px;
+    border: 0;
+    border-bottom: 5px solid #e50914;
+    background-color: lightgray;
+    border-radius: 0;
+}
+
+.Connexion div:nth-child(3){text-align: center;}
 
 /*Page Inscription*/
 section.PageInscription .button {width : auto} /* Donne une taille automatique au bouton valider */
@@ -256,14 +274,6 @@ section.PageInscription .button {width : auto} /* Donne une taille automatique a
 
 
 /* je sais plus a quoi sa sert en dessous, faut regarder XD*/
-.input {
-    -webkit-box-sizing: content-box;
-    padding: 10px 20px;
-    border-radius: 28px;
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
-
-}
-
 form {
     margin: 0 auto;
 
@@ -271,11 +281,6 @@ form {
 
 form div+div {
     margin-top: 1em;
-}
-
-label {
-    display: inline-block;
-    margin-left: 25px;
 }
 
 input,
