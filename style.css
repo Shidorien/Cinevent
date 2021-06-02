@@ -244,7 +244,9 @@ section.PageAccueil span p {overflow: scroll;position: relative;} /*ajoute une s
 section.PageAccueil span p::-webkit-scrollbar {display: none;} /*cache la scrollbar sans la désactivé */ 
 section.PageAccueil button {font-size: 1.5em;height: 1.5em;width: 1.5em;text-align: center;padding: 0;line-height: 0;} /*Bouton ajout au panier */
 section.PageAccueil div.boutonprix {margin-top: 0!important ;min-height: 10em;display: table-cell;vertical-align: middle; width: inherit;}
-
+section.PageAccueil .tabpanier table{width:60%;color:black;background-color: #393939;color:white;margin:1% 0 0 20%;}
+section.PageAccueil .tabpanier th{border-left:grey 2px solid;border-top:grey 2px solid;}
+section.PageAccueil .tabpanier td{border-left:grey 2px solid;border-top:grey 2px solid;}
 /*Page Contact*/
 section.PageContact div h1 {text-align: center;}
 section.PageContact div ul img {height: 100px;}
@@ -267,7 +269,6 @@ text-align: center;
 border: 3px solid #000000;
 }
 .Connexion input {margin-top: 20px;}
-
 
 
 

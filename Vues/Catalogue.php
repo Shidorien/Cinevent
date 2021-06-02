@@ -1,5 +1,4 @@
 <form id='panier' action='' name='panier' method='POST'>
-    
     <?php
             $requete ="SELECT TITRE_Lib,RES_Txt, FILM_Prix, FILM_Couverture FROM titre,resume,film Where film.FILM_Id = titre.FILM_ID AND titre.LAN_Id='".$Langue."' AND film.FILM_Id = resume.FILM_Id AND resume.LAN_Id='".$Langue."'";
             $listfilm=requete($requete);
@@ -11,7 +10,7 @@
                 {
                     if (isset($_POST["ajpanier".$k]))
                         {
-                            $req="insert into panier values(NULL,".$k.",5,'".$_SESSION['email']."');";
+                            $req="insert into panier values('(SELECT MAX( `panier_cmd` )+1 FROM panier)',".$k.",5,".$_POST['prix'].");";
                             $rs=requete($req);
                         }
                         print '
@@ -26,6 +25,7 @@
                                 {
                                     print
                                         '<div class="bouton+prix">
+                                        <input type="hidden" name="prix" value="'.$film[2].'">
                                         <h2 class="prix">'.$film[2].'€</h2> <!-- prix -->
                                         <button class="bouton2" type="submit" name="ajpanier'.$k.'" >'.$k.'</button>; 
                                     </div>';

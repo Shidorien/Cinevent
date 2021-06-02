@@ -28,7 +28,7 @@
         {?>
         <form>
             <li><input type="submit" id="deco" name="deco" class="Bouton_Menu" value="<?php echo $Deconnexion; ?>"></li>
-            
+            <li class="Bouton_Menu"><a href='index.php?srv=6'>Panier</a></li>
             </form>
         <?php
         }

@@ -174,3 +174,120 @@ if(isset($_POST['connexion'])) {
 	header("Location: http://localhost/GerardRadeCinevent/index.php?srv=3");
     }
 	
+
+
+
+
+	
+//panier
+
+function creationPanier(){
+    if (!isset($_SESSION['panier'])){
+       $_SESSION['panier']=array();
+       $_SESSION['panier']['IdFilm'] = array();
+       $_SESSION['panier']['libelleFilm'] = array();
+       $_SESSION['panier']['qteFilm'] = array();
+       $_SESSION['panier']['prixFilm'] = array();
+       $_SESSION['panier']['verrou'] = false; /*empeche les modification du panier si True */
+    }
+    return true;
+ }
+
+ function isVerrouille(){
+     return $_SESSION['panier']['verrou'];
+ }
+
+ function ajouterArticle($IdFilm,$libelleFilm,$qteFilm,$prixFilm){
+
+    //Si le panier existe
+    if (creationPanier() && !isVerrouille())
+    {
+       //Si le produit existe déjà on ajoute seulement la quantité
+       $positionFilm = array_search($IdFilm,  $_SESSION['panier']['IdFilm']);
+    
+       if ($positionFilm !== false)
+       {
+          $_SESSION['panier']['qteFilm'][$positionFilm] += $qteFilm ;
+       }
+       else
+       {
+          //Sinon on ajoute le produit
+          array_push( $_SESSION['panier']['IdFilm'],$IdFilm);
+          array_push( $_SESSION['panier']['libelleFilm'],$libelleFilm);
+          array_push( $_SESSION['panier']['qteFilm'],$qteFilm);
+          array_push( $_SESSION['panier']['prixFilm'],$prixFilm);
+       }
+    }
+    else
+    echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+}
+
+function supprimerArticle($IdFilm){
+    //Si le panier existe
+    if (creationPanier() && !isVerrouille())
+    {
+       //Nous allons passer par un panier temporaire
+       $tmp=array();
+       $tmp['IdFilm'] = array();
+       $tmp['libelleFilm'] = array();
+       $tmp['qteFilm'] = array();
+       $tmp['prixFilm'] = array();
+       $tmp['verrou'] = $_SESSION['panier']['verrou'];
+ 
+       for($i = 0; $i < count($_SESSION['panier']['IdFilm']); $i++)
+       {
+          if ($_SESSION['panier']['IdFilm'][$i] !== $IdFilm)
+          {
+             array_push( $tmp['IdFilm'],$_SESSION['panier']['IdFilm'][$i]);
+             array_push( $tmp['libelleFilm'],$_SESSION['panier']['libelleFilm'][$i]);
+             array_push( $tmp['qteFilm'],$_SESSION['panier']['qteFilm'][$i]);
+             array_push( $tmp['prixFilm'],$_SESSION['panier']['prixFilm'][$i]);
+          }
+ 
+       }
+       //On remplace le panier en session par notre panier temporaire à jour
+       $_SESSION['panier'] =  $tmp;
+       //On efface notre panier temporaire
+       unset($tmp);
+    }
+    else
+    echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+}
+
+ function modifierQTeArticle($IdProduit,$qteProduit){
+    //Si le panier existe
+    if (creationPanier() && !isVerrouille())
+    {
+       //Si la quantité est positive on modifie sinon on supprime l'article
+       if ($qteProduit > 0)
+       {
+          //Recherche du produit dans le panier
+          $positionProduit = array_search($IdProduit,  $_SESSION['panier']['IdProduit']);
+ 
+          if ($positionProduit !== false)
+          {
+             $_SESSION['panier']['qteProduit'][$positionProduit] = $qteProduit ;
+          }
+       }
+       else
+       supprimerArticle($IdProduit);
+    }
+    else
+    echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+}
+
+function compterArticles(){
+   if (isset($_SESSION['panier']))
+   return count($_SESSION['panier']['IdProduit']);
+   else
+   return 0;
+}
+
+function MontantGlobal(){
+    $total=0;
+    for($i = 0; $i < count($_SESSION['panier']['IdProduit']); $i++)
+    {
+       $total += $_SESSION['panier']['qteProduit'][$i] * $_SESSION['panier']['prixProduit'][$i];
+    }
+    return $total;
+}
