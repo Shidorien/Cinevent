@@ -1,6 +1,0 @@
-
-Template requete SQL :
-
-Ajouter un film : INSERT INTO articles (id,nom,Resume,dateSortie,auteur,acteur,genre,nationalite,duree,Prix,couverture)VALUES (id,"nom","resumer","aaaa-mm-jj","Auteur 1, Auteur 2","acteur 1, acteur 2","genre","nationalite","duree",prix,"lien photo");
-
-info utile : utiliser des flexbox plutot aue des inline-block

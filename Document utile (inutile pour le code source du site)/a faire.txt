@@ -1,4 +1,0 @@
-Terminer la mise en page du site.
-Faire un "pop-up" pour la connexion/inscription lorsque l'on clique sur une icon.
-Faire le php pour la connexion au site.
-Ajouter des données à la base BD.
